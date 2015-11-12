@@ -1,32 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "math.h"
+#include <ctype.h>
 
 
-void permutation(int* a , int* b)
+int main( int argc, char** argv){
+int i; double s = 0;
+
+for (i = 0; i < strlen(argv); i++)
 {
-	int temp;
-	temp = *a;
-	*a = *b;
-	*b = temp;
-		
+	
 }
-int main()
-{	
-	int a,b;
-	a = 165;
-	b = 89626;
-	permutation(&a,&b);
-	printf("a = %d et b = %d \n", a , b);
 
-
-
-
-
-
-
-
-
-
-exit(0);
+for(i=1; i<argc; i++)
+{
+	s += atof(argv[i]);
+}
+printf("%f\n", s);
+return 0;
 }
